@@ -10,8 +10,9 @@
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
         <OnClick motion:clickAction="toggle"
-            motion:targetId="@+id/constraintlayout">
-        </OnClick>
+            motion:targetId="@+id/constraintlayout"/>
+        <OnSwipe motion:autoCompleteMode="spring"
+            motion:onTouchUp="autoComplete"/>
         <KeyFrameSet>
         </KeyFrameSet>
     </Transition>
